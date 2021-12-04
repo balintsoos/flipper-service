@@ -1,5 +1,5 @@
 ### BUILD STAGE ###
-FROM golang:1.17.3-alpine3.15 as build
+FROM golang:1.17 as build
 
 WORKDIR /app/src
 
