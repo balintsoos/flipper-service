@@ -1,6 +1,12 @@
 grun:
 	go run .
 
+gfmt:
+	go fmt .
+
+gvet:
+	go vet .
+
 gtest:
 	go test -v
 
