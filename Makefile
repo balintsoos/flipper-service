@@ -1,14 +1,23 @@
-go-run:
+grun:
 	go run .
 
-go-test:
+gtest:
 	go test -v
 
-go-build:
+gbuild:
 	go build -o bin
 
-docker-build:
+dbuild:
 	docker build --tag balintsoos/flipper-service .
 
-docker-run:
-	docker run balintsoos/flipper-service
+drun:
+	docker run --rm --detach --publish 8080:8080 --env PORT=8080 --name flipper-service balintsoos/flipper-service
+
+dtest:
+	curl localhost:8080/ping
+
+dstop:
+	docker stop flipper-service
+
+dps:
+	docker ps --all
