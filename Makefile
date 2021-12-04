@@ -1,5 +1,5 @@
 go-run:
-	go run main.go
+	go run .
 
 build:
 	docker build --tag balintsoos/flipper-service .
