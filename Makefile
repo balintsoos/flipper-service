@@ -17,7 +17,7 @@ dbuild:
 	docker build --tag balintsoos/flipper-service .
 
 drun:
-	docker run --rm --detach --publish 8080:8080 --env PORT=8080 --name flipper-service balintsoos/flipper-service
+	docker run --rm --detach --publish 8080:8080 --name flipper-service balintsoos/flipper-service
 
 dtest:
 	curl localhost:8080/ping
