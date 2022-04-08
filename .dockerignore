@@ -2,6 +2,7 @@
 .dockerignore
 .editorconfig
 .gitignore
+bin
 docker-compose.yml
 Dockerfile
 LICENSE
