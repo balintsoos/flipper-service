@@ -1,3 +1,6 @@
+gget:
+	go get .
+
 grun:
 	go run .
 
